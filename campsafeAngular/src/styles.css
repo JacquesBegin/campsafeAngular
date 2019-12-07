@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/normalize.css/normalize.css';
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  user-select: none;
+  padding-bottom: 40px;
+}
