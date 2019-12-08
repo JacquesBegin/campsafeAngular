@@ -6,6 +6,7 @@ import { SuccessComponent } from './success/success.component';
 import { WarningComponent } from './warning/warning.component';
 import { TopBarComponent } from './topBar/topBar.component';
 import { DetailsComponent } from './details/details.component';
+import { SelectStateComponent } from './selectState/selectState.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DetailsComponent } from './details/details.component';
     SuccessComponent,
     WarningComponent,
     TopBarComponent,
-    DetailsComponent
+    DetailsComponent,
+    SelectStateComponent
   ],
   imports: [
     BrowserModule
