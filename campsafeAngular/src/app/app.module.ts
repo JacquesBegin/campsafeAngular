@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { SuccessComponent } from './success/success.component';
 import { WarningComponent } from './warning/warning.component';
 import { TopBarComponent } from './topBar/topBar.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SuccessComponent,
     WarningComponent,
-    TopBarComponent
+    TopBarComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule
