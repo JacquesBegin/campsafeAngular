@@ -1,4 +1,9 @@
 <br/>
 <h3>Select State</h3>
-<select></select>
+<select>
+  <option *ngFor="let state of states" [value]="state[0]">
+    {{ state[1] }}
+  </option>
+
+</select>
 <button>Search</button>
