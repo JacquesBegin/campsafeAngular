@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class BindingComponent {
-  
+  username: string = "";
+
+  onEnterUsername(event: Event) {
+    this.username = (<HTMLInputElement>event.target).value;
+  }
 }
