@@ -8,6 +8,7 @@ import { TopBarComponent } from './topBar/topBar.component';
 import { DetailsComponent } from './details/details.component';
 import { SelectStateComponent } from './selectState/selectState.component';
 import { FooterComponent } from './footer/footer.component';
+import { BindingComponent } from './binding/binding.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
     TopBarComponent,
     DetailsComponent,
     SelectStateComponent,
-    FooterComponent
+    FooterComponent,
+    BindingComponent
   ],
   imports: [
     BrowserModule
