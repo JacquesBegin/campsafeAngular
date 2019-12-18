@@ -18,6 +18,10 @@ export class BindingComponent {
     };
   }
 
+  onClickClearUsername() {
+    this.username = "";
+  }
+
 
 
   
