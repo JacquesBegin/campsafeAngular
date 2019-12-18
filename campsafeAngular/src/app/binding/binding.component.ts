@@ -20,6 +20,7 @@ export class BindingComponent {
 
   onClickClearUsername() {
     this.username = "";
+    this.usernameEmpty = true;
   }
 
 
