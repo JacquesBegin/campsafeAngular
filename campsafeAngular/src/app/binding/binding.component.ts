@@ -10,13 +10,15 @@ export class BindingComponent {
   username: string = "";
   usernameEmpty: boolean = true;
 
-  onEnterUsername(event: Event) {
+  onInputUsername(event: Event) {
     if ((<HTMLInputElement>event.target).value !== "") {
       this.usernameEmpty = false;
     } else {
       this.usernameEmpty = true;
     };
   }
+
+
 
   
 }
