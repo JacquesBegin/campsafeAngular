@@ -2,4 +2,5 @@
 type="text"
 [(ngModel)]="username">
 <p>{{ username }}</p>
-<button></button>
+<button
+[disabled]="usernameEmpty"></button>
