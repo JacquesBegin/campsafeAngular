@@ -4,4 +4,5 @@ type="text"
 [(ngModel)]="username">
 <p>{{ username }}</p>
 <button
-[disabled]="usernameEmpty">Submit</button>
+[disabled]="usernameEmpty"
+(click)="onClickClearUsername()">Submit</button>
