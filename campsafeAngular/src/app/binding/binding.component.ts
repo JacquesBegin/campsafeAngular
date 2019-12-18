@@ -8,22 +8,5 @@ import { Component } from '@angular/core';
 
 export class BindingComponent {
   username: string = "";
-  usernameEmpty: boolean = true;
 
-  onInputUsername(event: Event) {
-    if ((<HTMLInputElement>event.target).value !== "") {
-      this.usernameEmpty = false;
-    } else {
-      this.usernameEmpty = true;
-    };
-  }
-
-  onClickClearUsername() {
-    this.username = "";
-    this.usernameEmpty = true;
-  }
-
-
-
-  
 }
