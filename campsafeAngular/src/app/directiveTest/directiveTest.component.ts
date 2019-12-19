@@ -7,10 +7,18 @@ import { Component } from '@angular/core';
 })
 
 export class DirectiveTestComponent {
-display: boolean = false;
+  display: boolean = false;
+  count: number = 0;
+  countLog = [];
 
-setDisplay() {
-  this.display = this.display ? false : true;
-}
+  setDisplay() {
+    this.display = this.display ? false : true;
+  }
+
+  onClickLogCount() {
+    this.count++;
+    this.countLog.push(this.count);
+    this.setDisplay();
+  }
 
 }
