@@ -10,6 +10,7 @@ import { DetailsComponent } from './details/details.component';
 import { SelectStateComponent } from './selectState/selectState.component';
 import { FooterComponent } from './footer/footer.component';
 import { BindingComponent } from './binding/binding.component';
+import { DirectiveTestComponent } from './directiveTest/directiveTest.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BindingComponent } from './binding/binding.component';
     DetailsComponent,
     SelectStateComponent,
     FooterComponent,
-    BindingComponent
+    BindingComponent,
+    DirectiveTestComponent
   ],
   imports: [
     BrowserModule,
