@@ -1,4 +1,4 @@
 <br>
 <button (click)="onClickLogCount()">Display Campground</button>
 <p *ngIf="display">Ocala National Forest</p>
-<p *ngFor='let log of countLog'>{{ log }}</p>
+<p *ngFor='let log of countLog' [ngClass]="{highlighted: active === true}">{{ log }}</p>
