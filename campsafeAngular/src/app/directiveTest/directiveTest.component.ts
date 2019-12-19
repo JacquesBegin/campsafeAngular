@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 export class DirectiveTestComponent {
 display: boolean = false;
 
+setDisplay() {
+  this.display = this.display ? false : true;
+}
+
 }
