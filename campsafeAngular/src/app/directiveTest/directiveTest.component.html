@@ -1,4 +1,13 @@
 <br>
 <button (click)="onClickLogCount()">Display Campground</button>
-<p *ngIf="display">Ocala National Forest</p>
-<p *ngFor='let log of countLog' [ngClass]="{highlighted: active === true}">{{ log }}</p>
+<p *ngIf="display; else noDisplay">Ocala National Forest</p>
+<ng-template #noDisplay>
+  <p>No campground displayed.</p>
+</ng-template>
+<!-- <p *ngFor='let log of countLog' 
+[ngStyle]="{backgroundColor: log >= 5 ? 'blue' : 'transparent'}"
+>{{ log }}</p> -->
+<p *ngFor="let log of countLog; let i = index"
+[ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}" 
+[ngClass]="{highlighted: i >= 4}"
+>{{ log }}</p>
